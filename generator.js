@@ -4,6 +4,10 @@ const object = {
     thirdMessage: ['Simple as that.', 'That\'s it', 'End of story.']
 };
 
+const art = {
+    arts: ['(#^.^#)     Iglybuff, the kawaii person.', '(^._.^)~    Spoink, the smart pig.', '<(o.o )>      John, the illusionist.']
+}
+
 
 const generateRandomMessage = () => {
     let randomNumber1 = Math.floor(Math.random() * object.firstMessage.length);
@@ -13,6 +17,18 @@ const generateRandomMessage = () => {
     let randomMessage = object.firstMessage[randomNumber1] + object.secondMessage[randomNumber2] + object.thirdMessage[randomNumber3];
 
     console.log(randomMessage);
+    console.log(' ');
+    console.log(' ');
+    console.log(' ');
+}
+
+const generateRandomArt = () => {
+    let randomArt = Math.floor(Math.random() * art.arts.length);
+
+    console.log("Author:");
+    console.log(' ');
+    console.log(art.arts[randomArt]);
 }
 
 generateRandomMessage();
+generateRandomArt();
